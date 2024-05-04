@@ -64,7 +64,6 @@ ul li {
     padding: 12px 8px 12px 35px;
     user-select: none;
     cursor: pointer;
-
     position: relative;
 }
 
@@ -106,4 +105,21 @@ ul li span{
 
 ul li span:hover{
     background: #edeef0;
+}
+
+.row-of-buttons{
+    padding: 5px 10px 10px 20px;
+    margin: 10px;
+
+}
+
+.row-of-buttons button{
+    border: none;
+    outline: none;
+    padding: 10px 60px;
+    background: lawngreen;
+    color: midnightblue;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
 }
