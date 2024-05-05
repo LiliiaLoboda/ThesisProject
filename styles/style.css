@@ -120,6 +120,17 @@ ul li span:hover{
     background: lawngreen;
     color: midnightblue;
     font-size: 16px;
+    font-weight: 550;
     cursor: pointer;
     border-radius: 40px;
+    margin-right: 20px;
+}
+
+.row-of-buttons button:last-child {
+    margin-right: 0; /* Убираем отступ у последней кнопки */
+}
+
+.row-of-buttons button:nth-child(1) {
+    background: yellow; /* Устанавливаем желтый цвет фона для первой кнопки */
+    color: navy; /* Изменяем цвет текста на темно-синий */
 }

@@ -40,3 +40,29 @@ function showList(){
     listContainer.innerHTML = localStorage.getItem("list");
 }
 showList();
+
+function filterInProcess(){
+    let tasks = listContainer.querySelectorAll("li");
+    tasks.forEach(task => {
+        if (!task.classList.contains("checked")) {
+            task.style.display = "block"; // Показываем только незавершенные задачи
+        } else {
+            task.style.display = "none"; // Скрываем завершенные задачи
+        }
+    });
+}
+
+function filterDone() {
+    let tasks = listContainer.querySelectorAll("li");
+    tasks.forEach(task => {
+        if (task.classList.contains("checked")) {
+            task.style.display = "block"; // Показываем только завершенные задачи
+        } else {
+            task.style.display = "none"; // Скрываем незавершенные задачи
+        }
+    });
+}
+
+document.getElementById("in-process-btn").addEventListener("click", filterInProcess);
+document.getElementById("done-btn").addEventListener("click", filterDone);
+
