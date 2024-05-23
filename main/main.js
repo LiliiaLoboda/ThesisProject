@@ -121,3 +121,10 @@ document.querySelector('#calendar thead tr:nth-child(1) td:nth-child(1)').onclic
 document.querySelector('#calendar thead tr:nth-child(1) td:nth-child(3)').onclick = function() {
     calendar("calendar", document.querySelector('#calendar thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar thead td:nth-child(2)').dataset.month)+1);
 }
+
+$(function() {
+    $("#input-box").datepicker();
+    $(".datepicker-icon").on("click", function() {
+        $("#input-box").focus();
+    });
+});
