@@ -162,6 +162,9 @@ ul li span:hover{
     margin-left: auto;
     margin-right: auto;
 }
+#calendar thead td{
+    padding-bottom: 15px;
+}
 #calendar thead tr:last-child
 {
     font-weight: bold;
