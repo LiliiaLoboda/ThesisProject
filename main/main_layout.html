@@ -9,13 +9,12 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 </head>
 <body>
-
 <div class="container">
     <div class="todo-app">
         <h2>ToDo List</h2>
         <div class="row">
             <input type="text" id="input-box" placeholder="Add your text">
-            <!--            calendar-->
+            <input type="text" id="date-picker-box" placeholder="Select a date">
             <span class="datepicker-icon">&#x1F5D3;</span>
             <button onclick="addTask()">Add</button>
         </div>
@@ -23,24 +22,18 @@
             <button onclick="filterInProcess()" id="in-process-btn">InProcess</button>
             <button onclick="filterDone()" id="done-btn">Done</button>
         </div>
-        <ul id="list-container">
-            <!--            <li class="checked">Task 1 </li>-->
-            <!--            <li>Task 2 </li>-->
-        </ul>
+        <ul id="list-container"></ul>
     </div>
     <div class="container-calendar">
         <h2>Tasks for today</h2>
-        <div style="width:100%; border:5px solid #85672d; padding:6px;
-    margin-left: auto;
-    margin-right: auto;
-border-radius: 10px;
-box-shadow: 2px 2px 2px #f0f0f0">
+        <div style="width:100%; border:5px solid #85672d; padding:6px; margin-left: auto; margin-right: auto; border-radius: 10px; box-shadow: 2px 2px 2px #f0f0f0">
             <table id="calendar">
                 <thead>
                 <tr class="table-header">
-                    <td class="arrow"><b>&#8668;</b>
-                    <td colspan="5">
-                    <td class="arrow"><b>&#8669;</b>
+                    <td class="arrow"><b>&#8668;</b></td>
+                    <td colspan="5"></td>
+                    <td class="arrow"><b>&#8669;</b></td>
+                </tr>
                 <tr>
                     <td>Mon</td>
                     <td>Tue</td>
@@ -49,12 +42,11 @@ box-shadow: 2px 2px 2px #f0f0f0">
                     <td>Fri</td>
                     <td>Sat</td>
                     <td>Sun</td>
+                </tr>
                 </thead>
                 <tbody></tbody>
             </table>
         </div>
-
-        <!--        tasks-->
     </div>
 </div>
 <script src="main.js"></script>

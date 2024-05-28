@@ -107,6 +107,14 @@ ul li span:hover{
     background: #edeef0;
 }
 
+ul li .delete-icon {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
 .row-of-buttons{
     padding: 5px 10px 10px 20px;
     margin: 10px;
@@ -206,4 +214,17 @@ ul li span:hover{
     font-size: 25px;
     margin-top: -5px;
     margin-right: 10px;
+}
+
+.task-date-highlight {
+    background-color: #ffeb3b;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+ul li .task-date {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 0.8em;
+    color: grey;
 }
