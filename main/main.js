@@ -41,7 +41,7 @@ listContainer.addEventListener("click", function (e) {
         e.target.classList.toggle("checked");
         saveList();
         updateCalendar();
-    } else if (e.target.tagName === "SPAN" && e.target.classList.contains("delete-icon")) {
+    } else if (e.target.classList.contains("delete-icon")) {
         e.target.parentElement.remove();
         saveList();
         updateCalendar();

@@ -65,6 +65,7 @@ ul li {
     user-select: none;
     cursor: pointer;
     position: relative;
+    height: 30px;
 }
 
 ul li::before {
@@ -230,4 +231,5 @@ ul li .task-date {
     margin-right: 30px;
     font-size: 0.7em;
     color: grey;
+    width: 100px;
 }
