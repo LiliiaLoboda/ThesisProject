@@ -67,7 +67,7 @@ ul li {
     position: relative;
 }
 
-ul li::before{
+ul li::before {
     content: '';
     position: absolute;
     height: 23px;
@@ -80,16 +80,16 @@ ul li::before{
     left: 8px;
 }
 
-ul li.checked{
+ul li.checked {
     color: #555;
     text-decoration: line-through;
 }
 
-ul li.checked::before{
+ul li.checked::before {
     background-image: url("../images/done.png");
 }
 
-ul li span{
+ul li span {
     position: absolute;
     right: 0;
     top: 5px;
@@ -102,26 +102,24 @@ ul li span{
     text-align: center;
     border-radius: 50%;
 }
-
-ul li span:hover{
-    background: #edeef0;
+ul li .delete-icon{
+    transition: 0.5s;
 }
-
-ul li .delete-icon {
+ul li .delete-icon:hover {
     position: absolute;
     right: 10px;
     top: 10px;
     font-size: 22px;
     cursor: pointer;
+    background: #edeef0;
 }
 
-.row-of-buttons{
+.row-of-buttons {
     padding: 5px 10px 10px 20px;
     margin: 10px;
-
 }
 
-.row-of-buttons button{
+.row-of-buttons button {
     border: none;
     outline: none;
     padding: 10px 60px;
@@ -142,7 +140,8 @@ ul li .delete-icon {
     background: yellow; /* Устанавливаем желтый цвет фона для первой кнопки */
     color: navy; /* Изменяем цвет текста на темно-синий */
 }
-.container-calendar{
+
+.container-calendar {
     width: 100%;
     max-width: 440px;
     height: 460px;
@@ -152,14 +151,13 @@ ul li .delete-icon {
     border-radius: 10px;
 }
 
-.container-calendar h2{
+.container-calendar h2 {
     color: #85672d;
     margin-bottom: 20px;
     text-align: center;
 }
 
-#calendar
-{
+#calendar {
     background: whitesmoke;
     width: 90%;
     line-height: 1.2em;
@@ -170,42 +168,46 @@ ul li .delete-icon {
     margin-left: auto;
     margin-right: auto;
 }
-#calendar thead td{
+
+#calendar thead td {
     padding-bottom: 15px;
 }
-#calendar thead tr:last-child
-{
+
+#calendar thead tr:last-child {
     font-weight: bold;
     color: black;
 }
-#calendar thead tr:nth-child(1) td:nth-child(2)
-{
+
+#calendar thead tr:nth-child(1) td:nth-child(2) {
     color: #85672d;
     font-weight: bold;
     font-size: 20px;
 }
-#calendar thead tr:nth-child(1) td:nth-child(1):hover, #calendar thead tr:nth-child(1) td:nth-child(3):hover
-{
+
+#calendar thead tr:nth-child(1) td:nth-child(1):hover,
+#calendar thead tr:nth-child(1) td:nth-child(3):hover {
     cursor: pointer;
 }
-#calendar tbody td
-{
+
+#calendar tbody td {
     color: orange;
 }
-#calendar tbody td.hol
-{
+
+#calendar tbody td.hol {
     background: purple;
 }
-#calendar tbody td:nth-child(n+6), #calendar .holiday
-{
+
+#calendar tbody td:nth-child(n+6),
+#calendar .holiday {
     color: green;
 }
-#calendar tbody td.today
-{
+
+#calendar tbody td.today {
     border-radius: 20px 20px 20px 20px;
     background: red;
     color: #fff;
 }
+
 .arrow {
     font-size: 24px;
 }
@@ -225,6 +227,7 @@ ul li .delete-icon {
 ul li .task-date {
     display: inline-block;
     margin-left: 10px;
-    font-size: 0.8em;
+    margin-right: 30px;
+    font-size: 0.7em;
     color: grey;
 }
